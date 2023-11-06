@@ -32,13 +32,13 @@ const LotteryPage = (props) => {
         
     return (
         <div>
-            <div className='text-center mb-5 mt-5'>
+            <div className='text-center mb-3 mt-5'>
                     <div id='container'>
                         <h1 className='font text-center '>{oneLottery.brand} {oneLottery.model}</h1>
                         <h4  className=' font6 mb-5 mt-4'>Price: ${oneLottery.price}</h4>
                         <h4 className='font6 mt-5 mb-5'>Thoughts: {oneLottery.thoughts}</h4>
                     </div>
-                        <div className=' mb-5 mt-5'>
+                        <div className='  mt-5'>
                                 
                                 <div className='d-flex align-items-center justify-content-md-center mb-2 mt-4'>
                                     <div>
@@ -52,7 +52,7 @@ const LotteryPage = (props) => {
                                         </Link>
                                     </div>
                                     <div>
-                                        <button className=" font6 box2 circle-buttons2" onClick={deleteLottery}>Forget it</button>
+                                        <button className=" font6 box2 circle-buttons2" onClick={deleteLottery}>I'm Over It</button>
                                     </div>
                                 </div>
                                 <div>
@@ -63,6 +63,11 @@ const LotteryPage = (props) => {
                             
                         </div>
             </div>
+            <div className='text-center '>
+                    <Link to={'/home'}>
+                        <button className='font6 button3' >Home</button>
+                    </Link>
+                </div>
         </div>
     
     );

@@ -32,13 +32,13 @@ const WishPage = (props) => {
         
     return (
         <div>
-            <div className='text-center mb-5 mt-5'>
+            <div className='text-center mb-3 mt-5'>
                     <div id='container'>
                         <h1 className='font text-center '>{oneWish.brand} {oneWish.model}</h1>
                         <h4  className=' font6 mb-5 mt-4'>Price: ${oneWish.price}</h4>
                         <h4 className='font6 mt-5 mb-5'>Thoughts: {oneWish.thoughts}</h4>
                     </div>
-                        <div className=' mb-5 mt-5'>
+                        <div className='  mt-3'>
                                 
                                 <div className='d-flex align-items-center justify-content-md-center mb-2 mt-4'>
                                     <div>
@@ -52,7 +52,7 @@ const WishPage = (props) => {
                                         </Link>
                                     </div>
                                     <div>
-                                        <button className=" font6 box2 circle-buttons2" onClick={deleteWish}>Forget it</button>
+                                        <button className=" font6 box2 circle-buttons2" onClick={deleteWish}>I'm Over It</button>
                                     </div>
                                 </div>
                                 <div>
@@ -63,6 +63,11 @@ const WishPage = (props) => {
                             
                         </div>
             </div>
+            <div className='text-center '>
+                    <Link to={'/home'}>
+                        <button className='font6 button3' >Home</button>
+                    </Link>
+                </div>
         </div>
     
     );

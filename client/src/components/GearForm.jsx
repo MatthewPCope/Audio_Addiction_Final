@@ -89,7 +89,7 @@ const GearForm = (props) => {
                                 </div>
                                 <div className='d-flex justify-content-evenly'>
                                 <div>
-                                    <Link to={'/'}>
+                                    <Link to={'/home'}>
                                         <button className=' font6 button2' >Home</button>
                                     </Link>
                                 </div>

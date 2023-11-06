@@ -61,16 +61,16 @@ const EditGear = (props) => {
                 <div className= 'font6 box p-4 my-3'>
                     <form onSubmit={submitHandler}>
                         <div className='form-group mb-4'>
-                            <label className='form-label'>Brand:</label><br/>
-                            <input className='form-control' type="text" value = {gear.brand} name = "brand" onChange = {changeHandler}/>
+                            <label htmlFor="brand" className='form-label'>Brand:</label><br/>
+                            <input className='form-control' type="text" value = {gear.brand} id="brand" name = "brand" onChange = {changeHandler}/>
                             { errors.brand ? 
                             <p>{errors.brand.message}</p>
                             : null
                             }
                         </div>
                         <div className='form-group mb-4'>
-                            <label className='form-label'>Model:</label><br/>
-                            <input className='form-control' type="text" value = {gear.model} name = "model" onChange = {changeHandler}/>
+                            <label htmlFor="model" className='form-label'>Model:</label><br/>
+                            <input className='form-control' type="text" value = {gear.model} id="model" name = "model" onChange = {changeHandler}/>
                             { errors.model ? 
                             <p>{errors.model.message}</p>
                             : null

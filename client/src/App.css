@@ -75,6 +75,11 @@
   font-size: 42pt;
   
 }
+.font9{
+  font-family: "Rocker";
+  font-size: 38pt;
+  
+}
 
 
 .box {
@@ -203,12 +208,38 @@
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 }
 
+.circle-buttons3{
+  background-color:transparent;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.circle-buttons3:hover span{
+  display: none;
+}
+
+.circle-buttons3:hover:before {
+  content:"we salute you";
+}
+
+.circle-buttons4{
+  background-color:transparent;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.circle-buttons4:hover span{
+  display: none;
+}
+
+.circle-buttons4:hover:before {
+  content:"For those about to rock";
+}
+
 .bg{
   background-image: url(./images/pexels-pavel-danilyuk-7802300.jpg);
   font-family:'Courier New', Courier, monospace;
-  
   background-size: cover;
 }
+
 #gear-pics{
   margin-top: 10px;
   width: 890px;
@@ -267,8 +298,8 @@
   background-image: url(./images/pexels-e-5050610.jpg);
   background-size: cover;
 }
-.recording{
-  background-image: url(./images/pexels-pixabay-164938.jpg);
+.blacknwhite{
+  background-image: url(./images/pexels-stephen-niemeier-65718.jpg);
   background-size: cover;
 }
 .live-sound{

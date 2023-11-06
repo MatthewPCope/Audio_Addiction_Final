@@ -5,10 +5,13 @@ import {Link} from 'react-router-dom';
 
 const EditWish = (props) => {
     const { id } = useParams(); 
-    const [brand, setBrand] = useState("");
-    const [model, setModel] = useState("");
-    const [price, setPrice] = useState("");
-    const [thoughts, setThoughts] = useState("")
+    const [wish, setWish] = useState({
+        brand:'',
+        model:'',
+        price:'',
+        thoughts:''
+        
+    })
     const [errors, setErrors] = useState({})
     const navigate = useNavigate();
     
@@ -16,24 +19,23 @@ const EditWish = (props) => {
         axios
             .get(`http://localhost:8000/api/wish/${id}`)
             .then((res) => {
-                setBrand(res.data.brand);
-                setModel(res.data.model)
-                setPrice(res.data.price)
-                setThoughts(res.data.thoughts)
+                setWish(res.data)
             })
             .catch(err => console.log(err))
     }, [])
+    
+    const changeHandler = (e) => {
+        setWish({
+            ...wish,
+            [e.target.name]: e.target.value
+        })
+    }
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:8000/api/wish/${id}`,{
-            brand,
-            model,
-            price,
-            thoughts
-        })
+        axios.put(`http://localhost:8000/api/wish/${id}`, wish)
             .then((res) => {
                 console.log(res.data);
-                navigate(`/wishpage/${id}`);
+                navigate(`/wishlist`);
             })
             .catch((err) => {
                 setErrors(err.response.data.errors)
@@ -57,16 +59,16 @@ const EditWish = (props) => {
                 <div className= 'font6 box p-4 my-3'>
                     <form onSubmit={submitHandler}>
                         <div className='form-group mb-4'>
-                            <label className='form-label'>Brand:</label><br/>
-                            <input className='form-control' type="text" value = {brand} name = "brand" onChange = {(e)=>setBrand(e.target.value)}/>
+                            <label htmlFor="brand" className='form-label'>Brand:</label><br/>
+                            <input className='form-control' type="text" value = {wish.brand} id="brand" name = "brand" onChange = {changeHandler}/>
                             { errors.brand ? 
                             <p>{errors.brand.message}</p>
                             : null
                             }
                         </div>
                         <div className='form-group mb-4'>
-                            <label className='form-label'>Model:</label><br/>
-                            <input className='form-control' type="text" value = {model} name = "model" onChange = {(e)=>setModel(e.target.value)}/>
+                            <label htmlFor="model" className='form-label'>Model:</label><br/>
+                            <input className='form-control' type="text" value = {wish.model} id="model" name = "model" onChange = {changeHandler}/>
                             { errors.model ? 
                             <p>{errors.model.message}</p>
                             : null
@@ -74,7 +76,7 @@ const EditWish = (props) => {
                         </div>
                         <div className='form-group mb-4'>
                             <label htmlFor="price" className='form-label'>Price:</label><br/>
-                            <input className='form-control' type="text" id="price" value = {price} name = "price" onChange = {(e)=>setPrice(e.target.value)}/>
+                            <input className='form-control' type="text" id="price" value = {wish.price} name = "price" onChange = {changeHandler}/>
                             { errors.price ? 
                             <p>{errors.price.message}</p>
                             : null
@@ -82,7 +84,7 @@ const EditWish = (props) => {
                         </div>
                         <div className='form-group mb-4'>
                             <label htmlFor="thoughts" className='form-label'>Thoughts:</label><br/>
-                            <textarea className='form-control' type="text" id="thoughts" rows="4" cols="50" value = {thoughts} name = "thoughts" onChange = {(e)=>setThoughts(e.target.value)}/>
+                            <textarea className='form-control' type="text" id="thoughts" rows="4" cols="50" value = {wish.thoughts} name = "thoughts" onChange = {(e)=>setThoughts(e.target.value)}/>
                         </div>
                         <div className='d-flex justify-content-evenly'>
                         <div>
@@ -97,7 +99,7 @@ const EditWish = (props) => {
                         </div>
                     </form>
                     <div className=' text-center'>
-                            <button className=' button' onClick={deleteWish}>Forget it</button>
+                            <button className=' button' onClick={deleteWish}>Remove</button>
                         </div>
                 </div>
             </div>

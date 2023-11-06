@@ -41,7 +41,7 @@ const Login = (props) => {
 
     return (
     <div>
-        <h1 className='font text-center mb-5 mt-5'>Login</h1>
+        <h1 className='font text-center mb-4 mt-5'>Login</h1>
             <div id = "container2" className="">
                 <div className= 'font6 box p-4 my-3 '>
                     <form onSubmit={onSubmitHandler}>
@@ -68,7 +68,7 @@ const Login = (props) => {
                         
                         <div className='text-center mt-3'>
                             <Link to={'/register'}>
-                                <button className=' font2 button' >Don't Have an Account?</button>
+                                <button className='  button3' >Don't Have an Account?</button>
                             </Link>
                         </div>
                         

@@ -32,17 +32,17 @@ const GearPage = (props) => {
         
     return (
         <div>
-            <div className='text-center mb-5 mt-5'>
+            <div className='text-center mb-3 mt-5'>
                     <div id='container'>
                         <h1 className='font text-center '>{oneGear.brand} {oneGear.model}</h1>
                         <h4  className=' mb-5 mt-4 font6'>Bought it for: ${oneGear.price}</h4>
                         <h4 className='font6 mt-5 mb-5'>Thoughts: {oneGear.thoughts}</h4>
                     </div>
-                        <div className=' mb-5 mt-5'>
+                        <div className='  mt-5'>
                                 
                                 <div className='d-flex align-items-center justify-content-md-center mb-2 mt-4'>
                                     <div>
-                                        <a target='_blank' rel='noopener noreferrer' href="https://www.reverb.com">
+                                        <a target='_blank' rel='noopener noreferrer' href="https://reverb.com/sell/search">
                                             <button className=" font3 box2 circle-buttons2">Sell</button>
                                         </a>
                                     </div>
@@ -63,6 +63,11 @@ const GearPage = (props) => {
                             
                         </div>
             </div>
+            <div className='text-center '>
+                    <Link to={'/home'}>
+                        <button className='font6 button3' >Home</button>
+                    </Link>
+                </div>
         </div>
     
     );

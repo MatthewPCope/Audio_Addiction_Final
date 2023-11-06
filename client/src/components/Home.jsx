@@ -23,7 +23,8 @@ const Home = (props) => {
     return (
         <div>
             <h1 className=' font text-center mt-5'>Audio Addiction</h1>
-            <h2 className='font7 text-center mt-5'>Hey {currentUser.firstName}, Choose Wisely</h2>
+            <h2 className='font7 text-center mt-3'>Welcome, {currentUser.firstName}</h2>
+            <h3 className=' font6 text-center mb-3 '>Choose Wisely</h3>
             
             <div>
                 

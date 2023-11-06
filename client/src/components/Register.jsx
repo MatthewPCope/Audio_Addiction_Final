@@ -39,7 +39,7 @@ const Register = (props) => {
     return (
         <div >
             <div >
-            <h1 className='font text-center mb-5 mt-5'>Register</h1>
+            <h1 className='font text-center mb-4 mt-5'>Register</h1>
             
                 
                     <div id = "container2" className= " ">
@@ -90,7 +90,7 @@ const Register = (props) => {
                                 </div>
                                 <div className='text-center mt-3'>
                                     <Link to={'/login'}>
-                                        <button className=' font2 button' >Already Have an Account?</button>
+                                        <button className='  button3' >Already Have an Account?</button>
                                     </Link>
                                 </div>
                                 
