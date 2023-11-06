@@ -1,0 +1,281 @@
+#container{
+  margin:0px auto;
+  
+  /* display: flex;
+  justify-content: center; */
+  align-items:center;
+  margin-top: 30px;
+}
+#container2{
+  margin:0px auto;
+  
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 30px;
+}
+
+
+@font-face {
+  font-family: "KeyTabMetal";
+  
+  src: local("KeyTabMetal"),
+  url("./fonts/KeyTabMetal-MOAJ.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Vanessa";
+  
+  src: local("Vanessa"),
+  url("./fonts/vanessa-font/VanessaRegular-VKVw.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rocker";
+  
+  src: local("Rocker"),
+  url("./fonts/the-rockers-font/TheRockers-qZnz5.ttf") format("truetype");
+}
+
+
+.font{
+  font-family: "KeyTabMetal";
+  font-size: 72pt;
+}
+.font2{
+  font-family: "KeyTabMetal";
+  font-size: 28pt;
+}
+.font3{
+  font-family: "KeyTabMetal";
+  font-size: 48pt;
+}
+.font4{
+  font-family: "Vanessa";
+  font-size: 24pt;
+}
+.font5{
+  font-family: "Rocker";
+  font-size: 20pt;
+
+}
+.font6{
+  font-family: "Rocker";
+  font-size: 24pt;
+
+}
+
+.font7{
+  font-family: "Rocker";
+  font-size: 44pt;
+  
+}
+.font8{
+  font-family: "Rocker";
+  font-size: 42pt;
+  
+}
+
+
+.box {
+  width: 540px;
+  margin: 0px auto;
+  /* background-color: #F3AA60; */
+  border: 4px solid black;
+  margin:20px;
+  color: black;
+}
+.box4 {
+  width: 540px;
+  margin: 0px auto;
+  height:500px;
+  /* background-color: #F3AA60; */
+  border: 4px solid black;
+  margin:20px;
+  color: black;
+}
+
+.box2 {
+  border: 4px solid black;
+  color: black;
+  width:175px;
+  height:175px;
+  border-radius:50%;
+  
+}
+.table{
+  margin: 0px auto;
+  background-color: transparent;
+}
+.table2{
+  margin: 0px auto;
+  background-color: transparent;
+  
+}
+  
+  
+  
+
+.box3 {
+  border: 2px solid black;
+  color: black;
+  width:275px;
+  height:275px;
+  border-radius:50%;
+  
+}
+  
+  
+
+.button{
+  background-color: #332f2b;
+  color: white;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  margin:20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+  }
+  .button:hover {
+    background-color: transparent;
+    color:black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  }
+
+.button2{
+  background-color: #666c5b;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+  }
+  .button2:hover {
+    background-color: transparent;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  }
+  .button3{
+    background-color: #666c5b;
+    transition-duration: 0.3s;
+    border-radius: 8px;
+    margin: 20px;
+    font-size: 18pt;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+    }
+    .button3:hover {
+      background-color:#a68367;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+    }
+  .button4{
+    background-color: #332f2b;
+    color: white;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    margin:20px;
+    font-size: 18pt;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+    }
+    .button4:hover {
+      background-color: transparent;
+      color:black;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+    }
+    
+
+
+
+.circle-buttons{
+  background-color:transparent;
+  color: transparent;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+.circle-buttons:hover {
+  background-color: #666c5b;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+.circle-buttons2{
+  background-color:transparent;
+  
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+.circle-buttons2:hover {
+  background-color: #666c5b;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+.bg{
+  background-image: url(./images/pexels-pavel-danilyuk-7802300.jpg);
+  font-family:'Courier New', Courier, monospace;
+  
+  background-size: cover;
+}
+#gear-pics{
+  margin-top: 10px;
+  width: 890px;
+  margin: 0px auto;
+  
+  height:250px;
+  text-align: center;
+}
+
+.circle-pics{
+  
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  
+}
+.columns{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.columns1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.category{
+  margin-top: 45px;
+  
+  
+}
+.eguitars{
+  background-image: url(./images/pexels-brett-sayles-1205062.jpg);
+  background-size:cover;
+}
+.aguitars{
+  background-image: url(./images/pexels-pravesh-chaurasia-3660866.jpg);
+  background-size: cover;
+}
+.microphones{
+  background-image: url(./images/pexels-lukas-pereira-2097428.jpg);
+  background-size: cover;
+}
+.basses{
+  background-image: url(./images/pexels-diephotopotato-12063424.jpg);
+  background-size: cover;
+}
+
+.amp{
+  background-image: url(./images/pexels-mati-mango-4734754.jpg);
+  background-size: cover;
+}
+.pedals{
+  background-image: url(./images/pexels-e-5050610.jpg);
+  background-size: cover;
+}
+.recording{
+  background-image: url(./images/pexels-pixabay-164938.jpg);
+  background-size: cover;
+}
+.live-sound{
+  background-image: url(./images/pexels-harrison-haines-3122799.jpg);
+  background-size: cover;
+}
+
+p{
+  color:red
+}
