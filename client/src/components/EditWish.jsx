@@ -84,7 +84,7 @@ const EditWish = (props) => {
                         </div>
                         <div className='form-group mb-4'>
                             <label htmlFor="thoughts" className='form-label'>Thoughts:</label><br/>
-                            <textarea className='form-control' type="text" id="thoughts" rows="4" cols="50" value = {wish.thoughts} name = "thoughts" onChange = {(e)=>setThoughts(e.target.value)}/>
+                            <textarea className='form-control' type="text" id="thoughts" rows="4" cols="50" value = {wish.thoughts} name = "thoughts" onChange = {changeHandler}/>
                         </div>
                         <div className='d-flex justify-content-evenly'>
                         <div>

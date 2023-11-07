@@ -8,7 +8,7 @@ const Main = (props) => {
     
     return (
         <div>
-            <h1 className=' font text-center mt-5'>My Audio Addiction</h1>
+            <h1 className=' font text-center mt-5'>Audio Addiction</h1>
             <h5 className='font6 text-center mb-3'> Have a lot of gear?</h5>
             <h5 className='font6 text-center mb-3'> Keep track of it here.</h5>
             <div className=' d-flex justify-content-center'>
